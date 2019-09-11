@@ -20,7 +20,7 @@ String.IsNullOrEmpty(myvariable)
 A simple nodejs script:
  * going recursively through a root folder (configurable) 
  * ignoring some folders (configurable)
- * searching for .xaml file (configurable)
+ * searching for .xaml files (configurable)
  * searching all occurences of bad IsNullOrEmpty usage (configurable)
  * replace by a correct syntax for > 2018.2.x (configurable)
 
