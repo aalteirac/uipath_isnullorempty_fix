@@ -31,17 +31,13 @@ A simple nodejs script:
 
 Install latest nodejs 
 
-Edit index.js to enter your folder and options.
+Edit index.js to enter your root folder and options.
 
 ```
 //root folder, where all project to refactor are
 var rootFolder="C:\\Users\\Anthony\\Documents\\UiPath\\";
 //folder names to ignore
 var ignoreFolders=["ignored"];
-//file extension to include
-var includeFiles=[".xaml"];
-//search all content in brackets
-var searchContentBracket= /(?<=\[)(.*?)(.IsnullOrEmpty\s*\(\))(.*?)(?=\])|(?<=\[)(.*?)(.IsnullOrEmpty)(.*?)(?=\])/gi // 
 ```
 
 SIMULATION Launch with console report
