@@ -1,11 +1,11 @@
 # UiPath Refactor: IsNullOrEmpty
 
-## Goal: 
+## Goal
 If you migrated from 2018.2.x to a newer version, chances to face an issue with the following function "IsNullOrEmpty"
 
 Some projects use <variable_name>.IsNullOrEmpty instead of using String static: String.IsNullOrEmpty(<variable_name>)
 
-## Example:
+## Example
 
 Wrong usage, doesn't work in >2018.2.X
 
@@ -16,7 +16,7 @@ Correct usage, work in any case:
 String.IsNullOrEmpty(myvariable)
 
 
-## Concept:
+## Concept
 A simple nodejs script:
  going recursively through a root folder (configurable) 
  ignoring some folders (configurable)
