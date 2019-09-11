@@ -1,13 +1,15 @@
 # UiPath Refactor: IsNullOrEmpty
 
 ## Goal
-If you migrated from 2018.2.x to a newer version, chances to face an issue with the following function "IsNullOrEmpty"
+If you migrated from < 2018.2.2 to a newer version, chances to face an issue with the following function "IsNullOrEmpty"
 
 Some projects use <variable_name>.IsNullOrEmpty instead of using String static: String.IsNullOrEmpty(<variable_name>)
 
+see: https://docs.uipath.com/releasenotes/docs/2018-2-2#section-studio
+
 ## Example
 
-Wrong usage, doesn't work in >2018.2.X
+Wrong usage, doesn't work in 2018.2.2
 
 myvariable.IsNullOrEmpty
 
@@ -22,7 +24,7 @@ A simple nodejs script:
  * ignoring some folders (configurable)
  * searching for .xaml files (configurable)
  * searching all occurences of bad IsNullOrEmpty usage (configurable)
- * replace by a correct syntax for > 2018.2.x (configurable)
+ * replace by a correct syntax for 2018.2.2 and above (configurable)
 
 
 ## Getting Started
