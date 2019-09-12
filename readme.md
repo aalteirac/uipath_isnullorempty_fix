@@ -11,11 +11,11 @@ see: https://docs.uipath.com/releasenotes/docs/2018-2-2#section-studio
 
 Wrong usage, doesn't work starting in 2018.2.2
 
-myvariable.IsNullOrEmpty
+```myvariable.IsNullOrEmpty```
 
 Correct usage, work in any case:
 
-String.IsNullOrEmpty(myvariable)
+```String.IsNullOrEmpty(myvariable)```
 
 
 ## Concept
