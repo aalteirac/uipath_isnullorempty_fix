@@ -11,9 +11,9 @@ var includeFiles=[".xaml"];
 //search all content in brackets
 var searchContentBracket= /(?<=\[)(.*?)(.IsnullOrEmpty\s*\(\))(.*?)(?=\])|(?<=\[)(.*?)(.IsnullOrEmpty)(.*?)(?=\])/gi // 
 //search only IsnullOrEmpty.. expression
-var searchIsNullExp=/[a-z\u00C0-\u00FF]+(\.+IsnullOrEmpty\s*\(\))|[a-z\u00C0-\u00FF]+(\.+IsnullOrEmpty)/gi
+var searchIsNullExp=/[a-z\u00C0-\u00FF.]+(\.+IsnullOrEmpty\s*\(\))|[a-z\u00C0-\u00FF.]+(\.+IsnullOrEmpty)/gi
 //find the variable name
-var extractVarName=/[a-z\u00C0-\u00FF]+(?=\.+IsnullOrEmpty)/gi
+var extractVarName=/[a-z\u00C0-\u00FF.]+(?=\.+IsnullOrEmpty)/gi
 //ignore if variable is already "String"
 var correctVar=/string/gi;
 
